@@ -2,12 +2,8 @@
 title: "volcano3Ddata package"
 author: "Katriona Goldmann"
 output: md_document
-vignette: >
-  %\VignetteIndexEntry{volcano3D package}
-  %\VignetteEngine{knitr::rmarkdown}
-  \usepackage[utf8]{inputenc}
 ---
-
+  
 ```{r setup, include = FALSE, echo = FALSE}
 knitr::opts_chunk$set(echo = TRUE, 
                       warning = FALSE, 
@@ -57,9 +53,11 @@ The PEAC interactive web tool was creating as an
 *Not yet publicly available:*
 
 ```{r, eval = FALSE}
-library(devtools)
-install_github("KatrionaGoldmann/volcano3Ddata")
+repos = getOption("repos")
+repos["volcano3Ddata"] = "http://KatrionaGoldmann.github.io/volcano3Ddata"
+options(repos = repos)
 
+install.packages("volcano3Ddata")
 library(volcano3Ddata)
 ```
 
