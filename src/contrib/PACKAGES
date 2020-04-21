@@ -1,0 +1,6 @@
+Package: volcano3Ddata
+Version: 0.1.0.9000
+Depends: R (>= 3.5)
+License: GPL-2
+MD5sum: 770608548405431a59257ebb2db7907d
+NeedsCompilation: no

@@ -13,10 +13,10 @@ converted to interactive visualisations using plotly.
 
 These examples explore a case study from the PEAC rheumatoid arthritis
 trial (Pathobiology of Early Arthritis Cohort). The methodology has been
-published in [‘Lewis, Myles J., et al. “Molecular portraits of early
+published in ‘Lewis, Myles J., et al. “Molecular portraits of early
 rheumatoid arthritis identify clinical and treatment response
-phenotypes.” Cell reports 28.9 (2019):
-2455-2470.’](https://www.cell.com/cell-reports/fulltext/S2211-1247(19)31007-1)
+phenotypes.” Cell reports 28.9 (2019): 2455-2470.’ ([DOI:
+10.1016/j.celrep.2019.07.091](https://doi.org/10.1016/j.celrep.2019.07.091))
 with an interactive web tool available at <https://peac.hpc.qmul.ac.uk>.
 
 This tool acts as a searchable interface to examine relationships
@@ -32,15 +32,17 @@ Installation
 
 *Not yet publicly available:*
 
-    library(devtools)
-    install_github("KatrionaGoldmann/volcano3Ddata")
+    repos = getOption("repos")
+    repos["volcano3Ddata"] = "http://KatrionaGoldmann.github.io/volcano3Ddata"
+    options(repos = repos)
 
+    install.packages("volcano3Ddata")
     library(volcano3Ddata)
 
 Citation
 ========
 
-volcano3D was developed by the bioinforamtics team at the [Experimental
+volcano3D was developed by the bioinformatics team at the [Experimental
 Medicine & Rheumatology department](https://www.qmul.ac.uk/whri/emr/)
 and [Centre for Translational
 Bioinformatics](https://www.qmul.ac.uk/c4tb/) at Queen Mary University
@@ -61,7 +63,7 @@ or using:
     ## 
     ##   Katriona Goldmann and Myles Lewis (2020). volcano3Ddata: Data for
     ##   Interactive Plotting of Three-Way Differential Expression Analysis. R
-    ##   package version 1.0.0.9000.
+    ##   package version 0.1.0.9000.
     ##   https://github.com/KatrionaGoldmann/volcano3D_data
     ## 
     ## A BibTeX entry for LaTeX users is
@@ -71,6 +73,6 @@ or using:
     ## Expression Analysis},
     ##     author = {Katriona Goldmann and Myles Lewis},
     ##     year = {2020},
-    ##     note = {R package version 1.0.0.9000},
+    ##     note = {R package version 0.1.0.9000},
     ##     url = {https://github.com/KatrionaGoldmann/volcano3D_data},
     ##   }
