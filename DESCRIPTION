@@ -1,0 +1,21 @@
+Package: volcano3Ddata
+Type: Package
+Title: Data for Interactive Plotting of Three-Way Differential Expression
+        Analysis
+Version: 0.1.0
+Authors@R: c(
+    person("Katriona", "Goldmann", , "k.goldmann@qmul.ac.uk", role = c("aut", "cre")
+    ),
+    person("Myles", "Lewis", role = "aut")
+    )
+URL: https://github.com/KatrionaGoldmann/volcano3D_data
+BugReports: https://github.com/KatrionaGoldmann/volcano3D_data/issues
+Description: Data for Find probes differentially expressed between three groups and output interactive plots for interrogation.
+Language: en-gb
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5)
+VignetteBuilder: knitr
+RoxygenNote: 7.1.0
+NeedsCompilation: no
